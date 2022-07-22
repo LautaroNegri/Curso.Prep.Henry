@@ -121,7 +121,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (!num%2 !== 0) {
+  if (num%2 !== 0) {
     return true;
     } else {
     return false;
@@ -156,14 +156,13 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  let nextNum=num+1;
-  return  Math.round(nextNum)
+  return  Math.ceil(num)
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.floor(Math.random() * 2);
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -172,11 +171,11 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0){
-    return console.log ('es positivo');
+    return 'Es positivo';
   }else if (numero<0){
-    return console.log('es negativo');
+    return 'Es negativo';
   }else {
-    return console.log (false);
+    return false;
   }
 }
 
@@ -191,7 +190,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre ) + (apellido);
+  return (nombre) + ' ' + (apellido);
 }
 
 function obtenerSaludo(nombre) {
@@ -238,12 +237,12 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra.length === 1){
     if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'){
-      console.log('Es vocal'); 
+      return 'Es vocal'; 
     } else {
-      console.log('Dato incorrecto');
+      return 'Dato incorrecto';
     }
   } else {
-    console.log('dato incorrecto');
+    return 'Dato incorrecto';
   }
     
 }
