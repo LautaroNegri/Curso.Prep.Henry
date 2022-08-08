@@ -1,7 +1,7 @@
 html{
     height: 1500px;
     width: 900px;
-    color: white;
+    color: black;
     font-size: 25px;
     border: 10px solid magenta;
     background-color: black;
@@ -9,14 +9,21 @@ html{
 h1{
     color: red;
 }
+h3{
+    align-self: center;
+}
 #spanId{
     font-size: 18px;
     margin: 50px;
 }
 #thirdDiv{
+    align-items: center;
     background-color: blueviolet;
     height:600px;
     width: 500px;
     padding: 50px;
     border:10px double azure;
+}
+div{
+    align-self: center;
 }
